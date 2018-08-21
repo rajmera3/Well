@@ -29,8 +29,9 @@ class LoginActivity: AppCompatActivity() {
         loginViewModel.firebaseLoginObservable.subscribe {e ->
             Log.d("HERE", e.toString())
             if (e) {
-
                 var intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
     }

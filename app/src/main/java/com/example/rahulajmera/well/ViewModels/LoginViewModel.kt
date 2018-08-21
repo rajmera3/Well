@@ -10,18 +10,17 @@ import com.google.firebase.auth.FirebaseUser
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
 import io.reactivex.ObservableOnSubscribe
+import io.reactivex.subjects.PublishSubject
 
 class LoginViewModel {
 
     private lateinit var auth: FirebaseAuth
-    public lateinit var firebaseLoginObservable: Observable<Boolean>
+    public lateinit var firebaseLoginObservable: PublishSubject<Boolean>
     private var loggedIn: Boolean = false
 
     init {
         auth = FirebaseAuth.getInstance()
-        firebaseLoginObservable = Observable.create{e ->
-            e.onNext(loggedIn)
-        }
+        firebaseLoginObservable = PublishSubject.create()
 
     }
 
@@ -32,6 +31,7 @@ class LoginViewModel {
             if (e.isSuccessful) {
                 Log.d("SUCCESS", email)
                 loggedIn = true
+                firebaseLoginObservable.onNext(loggedIn)
             } else {
                 Log.d("LOGIN", "FAILEEEEED")
             }
