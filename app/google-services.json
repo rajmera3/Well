@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "630782899746",
+    "firebase_url": "https://well-cc79e.firebaseio.com",
+    "project_id": "well-cc79e",
+    "storage_bucket": "well-cc79e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630782899746:android:52fbd3999c6fc03e",
+        "android_client_info": {
+          "package_name": "com.example.rahulajmera.buddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630782899746-2njud5n7uctdsa2irscjddtrl933k0ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0DRixjdvzsOMKtYyqNi8BwTemmTt8V74"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630782899746:android:960a42e232bec381",
+        "android_client_info": {
+          "package_name": "com.example.rahulajmera.well"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630782899746-2njud5n7uctdsa2irscjddtrl933k0ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0DRixjdvzsOMKtYyqNi8BwTemmTt8V74"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
